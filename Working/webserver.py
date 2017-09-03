@@ -20,7 +20,7 @@ class webserverHandler(BaseHTTPRequestHandler):
                 self.end_headers()
 
                 output = ""
-                output += "<html><body>Hola!</body></html>"
+                output += "<html><body>&#161Hola! <a href = '/hello'>Back to Hello</a></body></html>"
                 self.wfile.write(bytes(output, "utf-8"))
                 print (output)
                 return
